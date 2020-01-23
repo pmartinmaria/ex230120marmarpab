@@ -2,6 +2,9 @@ header {
   border: 3px solid black;
 }
 
+header {
+  margin-bottom: 10px;
+}
 header figure .img1marmarpab {
   display: block;
   margin: auto;
@@ -17,6 +20,10 @@ header .licenciamarmarpab {
   text-align: center;
 }
 
+section {
+  position: relative;
+  margin-top: 10px;
+}
 section .contenedorGrid1marmarpab {
   display: grid;
   grid-template-columns: 50% 50%;
@@ -58,6 +65,23 @@ footer .contenedorGrid2marmarpab .elementoHijo2marmarpab button {
 footer .contenedorGrid2marmarpab .elementoHijo3marmarpab {
   text-align: center;
   padding: 20% 0;
+}
+
+.capaFijaGridmarmarpab {
+  display: grid;
+  position: sticky;
+  top: 0;
+  background-color: cadetblue;
+  grid-template-columns: 30% 25% 25%;
+}
+.capaFijaGridmarmarpab .capaHijamarmarpab button {
+  display: block;
+  margin: auto;
+  width: 30px;
+  height: 25px;
+  background-image: url(img/Recurso11.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 /*# sourceMappingURL=hojaestilos2marmarpab.css.map */

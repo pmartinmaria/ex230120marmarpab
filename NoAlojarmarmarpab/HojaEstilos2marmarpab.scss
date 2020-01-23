@@ -3,7 +3,7 @@
 }
 header {
     @extend %cabeceramarmarpab;
-
+    margin-bottom: 10px;
     figure {
         .img1marmarpab {
             display: block;
@@ -24,6 +24,8 @@ header {
     }
 }
 section{
+    position: relative;
+    margin-top: 10px;
     .contenedorGrid1marmarpab{
         display: grid;
         grid-template-columns: 50% 50%;
@@ -76,6 +78,27 @@ footer {
             text-align: center;
             padding: 20% 0;
             //padding-bottom: 25%;
+        }
+    }
+}
+@mixin tamCapasmarmarpab($capa1, $capa2, $capa3) {
+    grid-template-columns: $capa1 $capa2 $capa3;
+}
+.capaFijaGridmarmarpab{
+    display: grid;
+    position: sticky;
+    top: 0;
+    background-color: cadetblue;
+    @include tamCapasmarmarpab(30%,25% ,25%);
+    .capaHijamarmarpab{
+        button{
+            display: block;
+            margin: auto;
+            width: 30px;
+            height: 25px;
+            background-image: url(img/Recurso11.jpg);
+            background-size: contain;
+            background-repeat: no-repeat;  
         }
     }
 }

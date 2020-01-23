@@ -1,0 +1,63 @@
+header {
+  border: 3px solid black;
+}
+
+header figure .img1marmarpab {
+  display: block;
+  margin: auto;
+  width: 50%;
+  height: auto;
+}
+header figure figcaption {
+  text-align: center;
+}
+header .licenciamarmarpab {
+  display: block;
+  margin: auto;
+  text-align: center;
+}
+
+section .contenedorGrid1marmarpab {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+section .contenedorGrid1marmarpab .elementoHijomarmarpab {
+  border: 1px solid black;
+}
+section .contenedorGrid1marmarpab .elementoHijomarmarpab #video1marmarpab {
+  display: block;
+  margin: auto;
+}
+section .contenedorGrid1marmarpab .elementoHijomarmarpab button {
+  border-radius: 20px;
+  display: block;
+  margin: auto;
+  margin-top: 10px;
+}
+
+footer .contenedorGrid2marmarpab {
+  display: grid;
+  grid-template-columns: 60% 10% 30%;
+  border: 3px solid black;
+  margin-top: 10px;
+  padding: 10px;
+}
+footer .contenedorGrid2marmarpab .elementoHijo1marmarpab canvas {
+  border: 1px solid black;
+  border-radius: 20px;
+}
+footer .contenedorGrid2marmarpab .elementoHijo2marmarpab button {
+  display: block;
+  margin: auto;
+  width: 30px;
+  height: 50px;
+  background-image: url(img/Recurso9.gif);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+footer .contenedorGrid2marmarpab .elementoHijo3marmarpab {
+  text-align: center;
+  padding: 20% 0;
+}
+
+/*# sourceMappingURL=hojaestilos2marmarpab.css.map */

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Examen 23-01-2020 / marmarpab / Ej2</title>
+    <link rel="stylesheet" href="HojaEstilos2marmarpab.css">
+    <script>
+    function dibujarCasa() {
+            var canvasvar1 = document.getElementById('canvas1marmarpab'); 
+            var contexto1 = canvasvar1.getContext("2d"); 
+            contexto1.beginPath(); 
+            contexto1.arc(150, 10, 5, 0, 2 * Math.PI);
+            contexto1.moveTo(150, 0); 
+            contexto1.lineTo(100, 20); 
+            contexto1.lineTo(200, 20); 
+            contexto1.lineTo(150, 0); 
+            contexto1.moveTo(100, 20); 
+            contexto1.lineTo(100, 70);
+            contexto1.lineTo(200, 70);
+            contexto1.lineTo(200, 20);
+            contexto1.moveTo(140, 70); 
+            contexto1.lineTo(140, 50);
+            contexto1.lineTo(160, 50);
+            contexto1.lineTo(160, 70);
+            contexto1.stroke();
+            var imagen1 = document.getElementById("img1"); 
+            contexto1.drawImage(imagen1, 0, 0); /*eje x, eje y*/
+        }
+    </script>
+</head>
+
+<body>
+    <header>
+        <figure>
+            <img src="img/logo.png" class="img1marmarpab" title="Creado por marmarpab" alt="Creado por marmarpab">
+            <figcaption>Imagen editada por marmarpab</figcaption>
+        </figure>
+        <div class="licenciamarmarpab">
+            <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Licencia Creative Commons"
+                    style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />Esta obra
+            está bajo una <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Licencia Creative Commons
+                Atribución 4.0 Internacional</a>.
+        </div>
+    </header>
+    <section>
+        <div class="contenedorGrid1marmarpab">
+            <div class="elementoHijomarmarpab">
+                <video id="video1marmarpab" controls>
+                    <source src="video/Recurso8.mp4" type="video/mp4">
+                    <source src="video/Recurso8.ogg" type="video/ogg">
+                    <source src="video/Recurso8.webm" type="video/webm">
+                    Tu navegador no soporta esta etiqueta HTML5
+                </video>
+            </div>
+            <div class="elementoHijomarmarpab">
+                <button onclick="document.getElementById('video1').play()">Reproducir el Vídeo</button> 
+                <button onclick="document.getElementById('video1').pause()">Pausar el Vídeo</button> 
+                <button onclick="document.getElementById('video1').volume+=0.1">Aumentar el Volumen del Vídeo</button>
+                <button onclick="document.getElementById('video1').volume-=0.1">Disminuir el Volumen del Vídeo</button            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="contenedorGrid2marmarpab">
+            <div class="elementoHijo1marmarpab">
+                <canvas class="canvas1marmarpab" id="canvas1marmarpab" width="300" height="100"></canvas>
+                <img src="img/Recurso10.jpg" id="img1" style="display: none;">
+            </div>
+            <div class="elementoHijo2marmarpab">
+                <button onclick="dibujarCasa()"></button>
+            </div>
+            <div class="elementoHijo3marmarpab">
+                <a href="mar_mar_pab_230120_ej1.html">Enlace al ejercicio 1</a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

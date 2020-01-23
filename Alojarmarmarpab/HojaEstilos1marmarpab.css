@@ -1,0 +1,79 @@
+header {
+  border: 3px solid black;
+}
+
+header h1 {
+  text-align: center;
+}
+header figure .img1marmarpab {
+  display: block;
+  margin: auto;
+  width: 50%;
+  height: auto;
+}
+header figure figcaption {
+  text-align: center;
+}
+header .licenciamarmarpab {
+  display: block;
+  margin: auto;
+  text-align: center;
+}
+
+section .contenedorGrid1marmarpab .marmarpabContenedor2ConBordeAzul {
+  border: 1px solid blue;
+}
+
+section .contenedorGrid1marmarpab {
+  display: grid;
+  grid-template-columns: 80% 20%;
+  margin-bottom: 10px;
+}
+section .contenedorGrid1marmarpab .marmarpabContenedor1ConBordeVerde {
+  border: 1px solid green;
+  padding: 10px;
+}
+section .contenedorGrid1marmarpab .marmarpabContenedor1ConBordeVerde .img1Responmarmarpab {
+  display: block;
+  object-fit: scale-down;
+}
+section .contenedorGrid1marmarpab .marmarpabContenedor2ConBordeAzul {
+  padding: 10px;
+}
+section .contenedorGrid1marmarpab .marmarpabContenedor2ConBordeAzul button {
+  display: block;
+  margin: auto;
+  background-image: url(img/Recurso5.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+section .contenedorGrid1marmarpab .marmarpabContenedor2ConBordeAzul #elementoAlmacenmarmarpab {
+  text-align: center;
+}
+
+footer .contenedorGrid2marmarpab {
+  display: grid;
+  grid-template-columns: 25% 50% 25%;
+  border: 3px solid black;
+  margin-top: 10px;
+}
+footer .contenedorGrid2marmarpab .elementoHijo1marmarpab button {
+  display: block;
+  margin: auto;
+  background-image: url(img/Recurso6.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+footer .contenedorGrid2marmarpab .elementoHijo1marmarpab #elementoAlmacenTempmarmarpab {
+  text-align: center;
+}
+footer .contenedorGrid2marmarpab .elementoHijo2marmarpab button {
+  display: block;
+  margin: auto;
+}
+footer .contenedorGrid2marmarpab .elementoHijo3marmarpab {
+  text-align: center;
+  padding: 20% 0;
+}
+
+/*# sourceMappingURL=HojaEstilos1marmarpab.css.map */

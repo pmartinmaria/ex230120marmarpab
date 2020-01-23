@@ -1,0 +1,111 @@
+@import "HojaEstilos1Importmarmarpab.scss";
+
+%cabeceramarmarpab {
+    border: 3px solid black;
+}
+
+header {
+    @extend %cabeceramarmarpab;
+
+    h1 {
+        text-align: center;
+    }
+
+    figure {
+        .img1marmarpab {
+            display: block;
+            margin: auto;
+            width: 50%;
+            height: auto;
+        }
+
+        figcaption {
+            text-align: center;
+        }
+    }
+
+    .licenciamarmarpab {
+        display: block;
+        margin: auto;
+        text-align: center;
+    }
+}
+
+@mixin bordeVerdemarmarpab($color) {
+    border: 1px solid $color;
+}
+
+%bordeAzulmarmarpab {
+    border: 1px solid blue;
+}
+
+section {
+    .contenedorGrid1marmarpab {
+        display: grid;
+        grid-template-columns: 80% 20%;
+        margin-bottom: 10px;
+
+        .marmarpabContenedor1ConBordeVerde {
+            @include bordeVerdemarmarpab(green);
+            @include paddingPersonalizadomarmarpab(10px);
+
+            .img1Responmarmarpab {
+                display: block;
+
+                object-fit: scale-down;
+            }
+        }
+
+        .marmarpabContenedor2ConBordeAzul {
+            @extend %bordeAzulmarmarpab;
+            @include paddingPersonalizadomarmarpab(10px);
+
+            button {
+                display: block;
+                margin: auto;
+                background-image: url(img/Recurso5.png);
+                background-size: contain;
+                background-repeat: no-repeat;
+            }
+
+            #elementoAlmacenmarmarpab {
+                text-align: center;
+            }
+        }
+    }
+}
+
+footer {
+    .contenedorGrid2marmarpab {
+        display: grid;
+        grid-template-columns: 25% 50% 25%;
+        border: 3px solid black;
+        margin-top: 10px;
+        .elementoHijo1marmarpab {
+            button {
+                display: block;
+                margin: auto;
+                background-image: url(img/Recurso6.png);
+                background-size: contain;
+                background-repeat: no-repeat;
+            }
+
+            #elementoAlmacenTempmarmarpab {
+                text-align: center;
+            }
+        }
+
+        .elementoHijo2marmarpab {
+            button {
+                display: block;
+                margin: auto;
+            }
+        }
+
+        .elementoHijo3marmarpab {
+            text-align: center;
+            padding: 20% 0;
+            //padding-bottom: 25%;
+        }
+    }
+}

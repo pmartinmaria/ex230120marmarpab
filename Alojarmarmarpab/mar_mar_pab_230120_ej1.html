@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Examen 23-01-2020 / marmarpab / Ej1</title>
+    <link rel="stylesheet" href="HojaEstilos1marmarpab.css">
+    <script>
+        //document.addEventListener("DOMContentLoaded", cuantosClicks);
+        function cuantosClicks() {
+            if (typeof (Storage) !== "undefined") {
+                if (localStorage.getItem("contador")) {
+                    num = Number(localStorage.getItem("contador")) + 30
+                    localStorage.setItem("contador", num);
+                } else {
+                    localStorage.setItem("contador", 0);
+                }
+                document.getElementById("elementoAlmacenmarmarpab").innerHTML = "Has hecho clic en el botón: " + localStorage.getItem("contador") + " veces en esta sesión.";
+            } else {
+                document.getElementById("elementoAlmacenmarmarpab").innerHTML = "El navegador no soporta almacenamiento local";
+            }
+        }
+        function cuantosClicksTemp() {
+            if (typeof (Storage) !== "undefined") {
+                if (sessionStorage.cuentadeclicks) {
+                    sessionStorage.cuentadeclicks = Number(sessionStorage.cuentadeclicks) + 7;
+                } else {
+                    sessionStorage.cuentadeclicks = 0;
+                }
+                document.getElementById("elementoAlmacenTempmarmarpab").innerHTML = "Has hecho clic en el botón: " + sessionStorage.cuentadeclicks + " veces en esta sesión.";
+            } else {
+                document.getElementById("elementoAlmacenTempmarmarpab").innerHTML = "El navegador no soporta almacenamiento local";
+            }
+        }
+        function reiniciar() {
+            document.getElementById('audio1').currentTime = 0
+            if (document.getElementById('audio1').paused) {
+                document.getElementById('audio1').play();
+                interval = setInterval(mostrarDuracion, 100);
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <header>
+        <h1>Inicio del examen 23-01-2020. Alumno: marmarpab</h1>
+        <figure>
+            <img src="img/Recurso1.png" class="img1marmarpab" title="Imagen editada por marmarpab"
+                alt="Imagen editada por marmarpab">
+            <figcaption>Imagen editada por marmarpab</figcaption>
+        </figure>
+        <div class="licenciamarmarpab">
+            <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">
+                <img alt="Licencia Creative Commons" style="border-width:0"
+                    src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />
+            Esta obra está bajo una
+            <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">
+                Licencia Creative Commons Atribución-NoComercial-CompartirIgual 4.0 Internacional</a>.
+        </div>
+    </header>
+    <section>
+        <div class="contenedorGrid1marmarpab">
+            <div class="marmarpabContenedor1ConBordeVerde">
+                <picture>
+                    <source class="imgRespon1marmarpab" media="(min-width: 500px)" srcset="img/Recurso2.jpg">
+                    <source class="imgRespon1marmarpab" media="(min-width: 400px)" srcset="img/Recurso3.jpg">
+                    <img class="imgRespon1marmarpab" src="img/Recurso4.jpg" alt="Imagen retro compatible">
+                </picture>
+            </div>
+            <div class="marmarpabContenedor2ConBordeAzul">
+                <button onclick="cuantosClicks()">
+                    Contador
+                </button>
+                <div id="elementoAlmacenmarmarpab"></div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="contenedorGrid2marmarpab">
+            <div class="elementoHijo1marmarpab">
+                <button onclick="cuantosClicksTemp()">
+                    Contador temporal
+                </button>
+                <div id="elementoAlmacenTempmarmarpab"></div>
+            </div>
+            <div class="elementoHijo2marmarpab">
+                <audio id="audio1" controls>
+                    <source src="audio/Recurso7.mp3" type="audio/mpeg">
+                    <source src="audio/Recurso7.ogg" type="audio/ogg">
+                    <source src="audio/Recurso7.wav" type="audio/wav">
+                    Tu navegador no soporta esta etiqueta HTML5
+                </audio>
+                <button onclick="reiniciar()">Reiniciar el Audio</button>
+            </div>
+            <div class="elementoHijo3marmarpab">
+                <a href="mar_mar_pab_230120_ej2.html">Enlace al ejercicio 2</a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
